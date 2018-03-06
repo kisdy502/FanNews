@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.fragment;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -14,6 +14,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import news.fan.R;
 import news.fan.component.ApplicationComponent;
+import news.fan.ui.inner.BaseFragment;
 import news.fan.util.ImageLoaderUtil;
 
 /**

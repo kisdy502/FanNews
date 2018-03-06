@@ -7,12 +7,12 @@ import android.widget.FrameLayout;
 
 import butterknife.BindView;
 import news.fan.component.ApplicationComponent;
-import news.fan.ui.BaseActivity;
-import news.fan.ui.JanDanFragment;
-import news.fan.ui.PersonalFragment;
-import news.fan.ui.news.NewsFragment;
-import news.fan.ui.SupportFragment;
-import news.fan.ui.video.VideoFragment;
+import news.fan.ui.inner.BaseActivity;
+import news.fan.ui.fragment.JanDanFragment;
+import news.fan.ui.fragment.PersonalFragment;
+import news.fan.ui.fragment.NewsFragment;
+import news.fan.ui.inner.SupportFragment;
+import news.fan.ui.fragment.VideoFragment;
 import news.fan.util.StatusBarUtil;
 import news.fan.widget.BottomBar;
 import news.fan.widget.BottomBarTab;

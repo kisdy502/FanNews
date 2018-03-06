@@ -1,17 +1,12 @@
 package news.fan;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +21,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.observers.DisposableObserver;
 import news.fan.component.ApplicationComponent;
-import news.fan.ui.BaseActivity;
+import news.fan.ui.inner.BaseActivity;
 import news.fan.util.ImageLoaderUtil;
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;

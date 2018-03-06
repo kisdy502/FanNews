@@ -4,8 +4,8 @@ package news.fan.component;
 
 
 import dagger.Component;
-import news.fan.ui.news.NewsFragment;
-import news.fan.ui.video.VideoFragment;
+import news.fan.ui.fragment.NewsFragment;
+import news.fan.ui.fragment.VideoFragment;
 
 /**
  * desc: .

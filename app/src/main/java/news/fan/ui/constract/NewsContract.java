@@ -1,8 +1,8 @@
-package news.fan.ui.news;
+package news.fan.ui.constract;
 
 import java.util.List;
 import news.fan.bean.Channel;
-import news.fan.ui.BaseContract;
+import news.fan.ui.inner.BaseContract;
 
 /**
  * Created by Administrator on 2018/3/5.

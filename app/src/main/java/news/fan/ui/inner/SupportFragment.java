@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.inner;
 
 import android.app.Activity;
 import android.os.Bundle;

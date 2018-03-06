@@ -1,4 +1,4 @@
-package news.fan.ui.news;
+package news.fan.ui.fragment;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -15,8 +15,10 @@ import news.fan.R;
 import news.fan.bean.Channel;
 import news.fan.component.ApplicationComponent;
 import news.fan.component.DaggerHttpComponent;
-import news.fan.ui.BaseFragment;
-import news.fan.ui.JanDanFragment;
+import news.fan.ui.inner.BaseFragment;
+import news.fan.ui.ChannelPagerAdapter;
+import news.fan.ui.constract.NewsContract;
+import news.fan.ui.presenter.NewsPresenter;
 import news.fan.widget.CustomViewPager;
 
 /**
@@ -37,6 +39,8 @@ public class NewsFragment extends BaseFragment<NewsPresenter> implements NewsCon
     private int selectedIndex;
     private String selectedChannel;
 
+    private ChannelPagerAdapter mChannelPagerAdapter;
+
     public static NewsFragment newInstance() {
         Bundle args = new Bundle();
         NewsFragment fragment = new NewsFragment();
@@ -45,13 +49,18 @@ public class NewsFragment extends BaseFragment<NewsPresenter> implements NewsCon
     }
 
 
-
     @Override
-    public void loadData(List<Channel> channels, List<Channel> otherChannels) {
+    public void loadData(List<Channel> channels, List<Channel> unSelectedDatas) {
         if (channels != null) {
             mSelectedDatas.clear();
             mSelectedDatas.addAll(channels);
             mUnSelectedDatas.clear();
+            mUnSelectedDatas.addAll(unSelectedDatas);
+            mChannelPagerAdapter = new ChannelPagerAdapter(getChildFragmentManager(), channels);
+            mViewpager.setAdapter(mChannelPagerAdapter);
+            mViewpager.setOffscreenPageLimit(2);
+            mViewpager.setCurrentItem(0, false);
+            SlidingTabLayout.setViewPager(mViewpager);
         } else {
             T("数据异常");
         }

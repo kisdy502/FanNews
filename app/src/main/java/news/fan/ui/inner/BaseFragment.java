@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.inner;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -20,7 +20,6 @@ import butterknife.Unbinder;
 
 import news.fan.MyApplication;
 import news.fan.R;
-import news.fan.ui.inner.IBase;
 import news.fan.util.DialogHelper;
 import news.fan.widget.MultiStateView;
 import news.fan.widget.SimpleMultiStateView;

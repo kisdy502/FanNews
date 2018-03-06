@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.inner;
 
 import com.trello.rxlifecycle2.LifecycleTransformer;
 

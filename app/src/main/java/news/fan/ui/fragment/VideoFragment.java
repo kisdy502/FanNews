@@ -1,4 +1,4 @@
-package news.fan.ui.video;
+package news.fan.ui.fragment;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,9 +12,9 @@ import news.fan.bean.VideoChannelBean;
 import news.fan.bean.VideoDetailBean;
 import news.fan.component.ApplicationComponent;
 import news.fan.component.DaggerHttpComponent;
-import news.fan.ui.BaseFragment;
-import news.fan.ui.JanDanFragment;
-import news.fan.ui.video.VideoContract;
+import news.fan.ui.inner.BaseFragment;
+import news.fan.ui.constract.VideoContract;
+import news.fan.ui.presenter.VideoPresenter;
 
 /**
  * Created by Administrator on 2018/3/5.

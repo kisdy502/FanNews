@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.fragment;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -13,6 +13,7 @@ import java.util.List;
 import butterknife.BindView;
 import news.fan.R;
 import news.fan.component.ApplicationComponent;
+import news.fan.ui.inner.BaseFragment;
 
 /**
  * Created by Administrator on 2018/3/5.

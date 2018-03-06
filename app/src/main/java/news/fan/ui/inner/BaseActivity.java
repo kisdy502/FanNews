@@ -1,10 +1,9 @@
-package news.fan.ui;
+package news.fan.ui.inner;
 
 import android.app.Dialog;
 import android.support.annotation.ColorInt;
 import android.support.annotation.IntRange;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +20,6 @@ import butterknife.Unbinder;
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
 import news.fan.MyApplication;
 import news.fan.R;
-import news.fan.ui.inner.IBase;
 import news.fan.util.DialogHelper;
 import news.fan.util.StatusBarUtil;
 import news.fan.widget.MultiStateView;

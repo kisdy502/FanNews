@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import org.litepal.LitePal;
+import org.litepal.LitePalApplication;
 import org.litepal.exceptions.GlobalException;
 import news.fan.component.ApplicationComponent;
 import news.fan.component.DaggerApplicationComponent;
@@ -15,7 +16,7 @@ import news.fan.util.ContextUtils;
  * Created by Administrator on 2018/3/3.
  */
 
-public class MyApplication extends Application {
+public class MyApplication extends LitePalApplication {
 
     private static MyApplication intance;
     static Context sContext;
@@ -45,10 +46,4 @@ public class MyApplication extends Application {
         return applicationComponent;
     }
 
-    public static Context getContext() {
-        if (sContext == null) {
-            throw new GlobalException(GlobalException.APPLICATION_CONTEXT_IS_NULL);
-        }
-        return sContext;
-    }
 }

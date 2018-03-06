@@ -1,4 +1,4 @@
-package news.fan.ui;
+package news.fan.ui.inner;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;

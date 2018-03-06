@@ -1,10 +1,10 @@
-package news.fan.ui.video;
+package news.fan.ui.constract;
 
 import java.util.List;
 
 import news.fan.bean.VideoChannelBean;
 import news.fan.bean.VideoDetailBean;
-import news.fan.ui.BaseContract;
+import news.fan.ui.inner.BaseContract;
 
 /**
  * Created by Administrator on 2018/3/5.
