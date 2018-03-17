@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FanNews.iml" filepath="$PROJECT_DIR$/FanNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitylife/activitylife.iml" filepath="$PROJECT_DIR$/activitylife/activitylife.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynmictype/dynmictype.iml" filepath="$PROJECT_DIR$/dynmictype/dynmictype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hookactivity/hookactivity.iml" filepath="$PROJECT_DIR$/hookactivity/hookactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rsademo/rsademo.iml" filepath="$PROJECT_DIR$/rsademo/rsademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testlib/testlib.iml" filepath="$PROJECT_DIR$/testlib/testlib.iml" />
     </modules>
   </component>
 </project>

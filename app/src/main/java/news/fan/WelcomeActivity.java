@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
@@ -23,6 +24,7 @@ import io.reactivex.observers.DisposableObserver;
 import news.fan.component.ApplicationComponent;
 import news.fan.ui.inner.BaseActivity;
 import news.fan.util.ImageLoaderUtil;
+import news.fan.util.StatusBarUtil;
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
 
@@ -43,7 +45,19 @@ public class WelcomeActivity extends BaseActivity {
 
     @OnClick(R.id.fl_ad)
     public void onViewClicked() {
-        toMain();
+//        toMain();
+        new Thread() {
+            @Override
+            public void run() {
+                OkHttpTest test = new OkHttpTest();
+                try {
+                    test.send();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
+
     }
 
     private void toMain() {
@@ -76,7 +90,7 @@ public class WelcomeActivity extends BaseActivity {
 
     @Override
     public void bindView(View view, Bundle savedInstanceState) {
-        //StatusBarUtil.setTranslucentForImageView(this, 0, flAd);
+        StatusBarUtil.setTranslucentForImageView(this, 0, flAd);
         final GifDrawable gifDrawable = (GifDrawable) gifImageView.getDrawable();
         gifDrawable.setLoopCount(1);
         gifImageView.postDelayed(new Runnable() {
@@ -84,15 +98,15 @@ public class WelcomeActivity extends BaseActivity {
             public void run() {
                 gifDrawable.start();
             }
-        }, 100);
+        }, 30);
 
         //必应每日壁纸 来源于 https://www.dujin.org/fenxiang/jiaocheng/3618.html.
         ImageLoaderUtil.LoadImage(this, "http://api.dujin.org/bing/1920.php", ivAd);
 
-        mCompositeDisposable.add(countDown(3).doOnSubscribe(new Consumer<Disposable>() {
+        mCompositeDisposable.add(countDown(100000).doOnSubscribe(new Consumer<Disposable>() {
             @Override
             public void accept(@NonNull Disposable disposable) throws Exception {
-                tvSkip.setText("跳过 4");
+                tvSkip.setText("跳过 100000");
             }
         }).subscribeWith(new DisposableObserver<Integer>() {
             @Override
@@ -107,7 +121,7 @@ public class WelcomeActivity extends BaseActivity {
 
             @Override
             public void onComplete() {
-                toMain();
+//                toMain();
             }
         }));
     }
