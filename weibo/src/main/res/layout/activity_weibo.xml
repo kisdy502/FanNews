@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="news.fan.weibo.MainActivity">
+
+    <TextView
+        android:id="@+id/weibo_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="@color/colorPrimary"
+        android:text="今天发的第一篇微博，测试状态模式!"
+        android:onClick="btnClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/comment_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评论!"
+        android:onClick="btnClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weibo_content" />
+
+</android.support.constraint.ConstraintLayout>
