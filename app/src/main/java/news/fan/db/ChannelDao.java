@@ -14,6 +14,8 @@ import news.fan.bean.Channel;
  */
 
 public class ChannelDao {
+
+
     public static List<Channel> getChannels() {
         return DataSupport.findAll(Channel.class);
     }

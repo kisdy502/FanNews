@@ -9,12 +9,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/activitylife" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dagger2mvp" />
             <option value="$PROJECT_DIR$/dynmictype" />
+            <option value="$PROJECT_DIR$/fordagger" />
             <option value="$PROJECT_DIR$/hookactivity" />
+            <option value="$PROJECT_DIR$/lifeactivity" />
             <option value="$PROJECT_DIR$/rsademo" />
             <option value="$PROJECT_DIR$/testlib" />
+            <option value="$PROJECT_DIR$/weibo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

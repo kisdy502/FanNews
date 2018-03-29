@@ -45,19 +45,7 @@ public class WelcomeActivity extends BaseActivity {
 
     @OnClick(R.id.fl_ad)
     public void onViewClicked() {
-//        toMain();
-        new Thread() {
-            @Override
-            public void run() {
-                OkHttpTest test = new OkHttpTest();
-                try {
-                    test.send();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }.start();
-
+        toMain();
     }
 
     private void toMain() {
@@ -103,10 +91,10 @@ public class WelcomeActivity extends BaseActivity {
         //必应每日壁纸 来源于 https://www.dujin.org/fenxiang/jiaocheng/3618.html.
         ImageLoaderUtil.LoadImage(this, "http://api.dujin.org/bing/1920.php", ivAd);
 
-        mCompositeDisposable.add(countDown(100000).doOnSubscribe(new Consumer<Disposable>() {
+        mCompositeDisposable.add(countDown(5).doOnSubscribe(new Consumer<Disposable>() {
             @Override
             public void accept(@NonNull Disposable disposable) throws Exception {
-                tvSkip.setText("跳过 100000");
+                tvSkip.setText("跳过 5");
             }
         }).subscribeWith(new DisposableObserver<Integer>() {
             @Override
@@ -121,7 +109,7 @@ public class WelcomeActivity extends BaseActivity {
 
             @Override
             public void onComplete() {
-//                toMain();
+                toMain();
             }
         }));
     }

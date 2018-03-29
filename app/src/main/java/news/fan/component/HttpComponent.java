@@ -4,6 +4,8 @@ package news.fan.component;
 
 
 import dagger.Component;
+import news.fan.MainActivity;
+import news.fan.ui.fragment.DetailFragment;
 import news.fan.ui.fragment.NewsFragment;
 import news.fan.ui.fragment.VideoFragment;
 
@@ -16,4 +18,5 @@ import news.fan.ui.fragment.VideoFragment;
 public interface HttpComponent {
     void inject(NewsFragment newsFragment);
     void inject(VideoFragment videoFragment);
+    void inject(DetailFragment detailFragment);
 }

@@ -1,1 +1,1 @@
-include ':app', ':hookactivity', ':testlib', ':dynmictype', ':activitylife', ':rsademo'
+include ':app', ':hookactivity', ':testlib', ':dynmictype', ':lifeactivity', ':rsademo', ':weibo', ':fordagger', ':dagger2mvp'

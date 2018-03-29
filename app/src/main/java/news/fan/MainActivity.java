@@ -5,8 +5,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import news.fan.component.ApplicationComponent;
+import news.fan.component.DaggerHttpComponent;
 import news.fan.ui.inner.BaseActivity;
 import news.fan.ui.fragment.JanDanFragment;
 import news.fan.ui.fragment.PersonalFragment;
@@ -16,6 +19,7 @@ import news.fan.ui.fragment.VideoFragment;
 import news.fan.util.StatusBarUtil;
 import news.fan.widget.BottomBar;
 import news.fan.widget.BottomBarTab;
+import news.fan.component.DaggerApplicationComponent;
 
 public class MainActivity extends BaseActivity {
     final static String TAG = "MainActivity";
@@ -56,6 +60,7 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
+    @Inject
     public void initInjector(ApplicationComponent appComponent) {
 
     }
@@ -85,7 +90,7 @@ public class MainActivity extends BaseActivity {
         mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position, int prePosition) {
-//                getSupportDelegate().showHideFragment(mFragments[position], mFragments[prePosition]);
+                getSupportDelegate().showHideFragment(mFragments[position], mFragments[prePosition]);
             }
 
             @Override

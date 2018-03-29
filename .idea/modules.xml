@@ -3,12 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FanNews.iml" filepath="$PROJECT_DIR$/FanNews.iml" />
-      <module fileurl="file://$PROJECT_DIR$/activitylife/activitylife.iml" filepath="$PROJECT_DIR$/activitylife/activitylife.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dagger2mvp/dagger2mvp.iml" filepath="$PROJECT_DIR$/dagger2mvp/dagger2mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynmictype/dynmictype.iml" filepath="$PROJECT_DIR$/dynmictype/dynmictype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fordagger/fordagger.iml" filepath="$PROJECT_DIR$/fordagger/fordagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookactivity/hookactivity.iml" filepath="$PROJECT_DIR$/hookactivity/hookactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lifeactivity/activitylife.iml" filepath="$PROJECT_DIR$/lifeactivity/activitylife.iml" />
       <module fileurl="file://$PROJECT_DIR$/rsademo/rsademo.iml" filepath="$PROJECT_DIR$/rsademo/rsademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/testlib/testlib.iml" filepath="$PROJECT_DIR$/testlib/testlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weibo/weibo.iml" filepath="$PROJECT_DIR$/weibo/weibo.iml" />
     </modules>
   </component>
 </project>

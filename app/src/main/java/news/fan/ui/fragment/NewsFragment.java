@@ -112,5 +112,6 @@ public class NewsFragment extends BaseFragment<NewsPresenter> implements NewsCon
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        EventBus.getDefault().unregister(this);
     }
 }
