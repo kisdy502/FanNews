@@ -1,8 +1,6 @@
 package news.fan.dagger2mvp;
 
 import android.app.Application;
-import android.content.res.Configuration;
-
 import news.fan.dagger2mvp.component.ApplicationComponent;
 import news.fan.dagger2mvp.component.DaggerApplicationComponent;
 import news.fan.dagger2mvp.module.ApplicationModule;

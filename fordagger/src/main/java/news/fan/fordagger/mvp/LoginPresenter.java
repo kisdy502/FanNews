@@ -11,11 +11,6 @@ import javax.inject.Inject;
 
 public class LoginPresenter extends BasePresenter<LoginContract.View> implements LoginContract.Presenter {
 
-    @Inject
-    public LoginPresenter(LoginContract.View mView) {
-        super(mView);
-    }
-
     @Override
     public void login(String userName, String password) {
         if (TextUtils.isEmpty(userName) || TextUtils.isEmpty(password)) {

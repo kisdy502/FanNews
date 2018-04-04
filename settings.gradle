@@ -1,1 +1,1 @@
-include ':app', ':hookactivity', ':testlib', ':dynmictype', ':lifeactivity', ':rsademo', ':weibo', ':fordagger', ':dagger2mvp'
+include ':app', ':hookactivity', ':testlib', ':dynmictype', ':lifeactivity', ':rsademo', ':weibo', ':fordagger', ':dagger2mvp', ':resourceloader', ':resourcethemesky', ':resourcethemeclassic'

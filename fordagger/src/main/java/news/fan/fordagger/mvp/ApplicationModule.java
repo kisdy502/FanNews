@@ -12,14 +12,8 @@ import dagger.Provides;
 @Module
 public class ApplicationModule {
 
-    IBaseContract.IBaseView mView;
-
-    public ApplicationModule(IBaseContract.IBaseView view){
-        mView = view;
-    }
-
     @Provides
-    IBaseContract.IBaseView providerView() {
-        return mView;
+    LoginPresenter providerLoginPresenter() {
+       return new LoginPresenter();
     }
 }
